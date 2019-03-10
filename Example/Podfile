@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ImageLoader_Example' do
+  pod 'ImageLoader', :path => '../'
+
+  target 'ImageLoader_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
