@@ -7,11 +7,15 @@
 //
 
 import UIKit
-
+import ImageLoader
 class ViewController: UIViewController {
-
+    @IBOutlet weak var imageView : UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let url = "https://bestapples.com/wp-content/uploads/2018/01/ambrosia-apple.jpg"
+        self.imageView.loadImage(url: url) {
+            
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
